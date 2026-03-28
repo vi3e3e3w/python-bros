@@ -69,7 +69,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
 	5:My fault of programing this
 	6:Some kind of fun (beta)
 	exit() quit...for now
-Update will be soon (1.23)""")
+Update will be soon (1.3)""")
 while True:
 	key = input(">>>")
 	if key == "1":
@@ -79,7 +79,7 @@ while True:
 	elif key == "3":
 		reset()
 	elif key == "4":
-		info())
+		info()
 	elif key == "5":
 		myfault()
 	elif key == "6":

@@ -1,13 +1,19 @@
 #THKS TO BRILLIANT
 import random, time #PLAY RAMDOM WHO CARE =)))
-#----_Varible-----
+#-----Variable-----
+users = {
+    "admin": "admin",
+    "tests": "12345"
+}
+
 def logintest():
-	username = input("username :")
-	password = input("passworld:")
-	if username == password:
-		print("TEST FAIL: bro...Who make password and username duplicate")
-	else:
-			print("TEST OK")
+    username = input("username: ")
+    password = input("password: ")
+
+    if username in users and users[username] == password:
+        print("TEST OK")
+    else:
+        print("GET OUT, USERNAME NOT IN LIST")
 def loguptest():
 		nw_username = input("username:")
 		nw_password = input("passoword:")
@@ -17,37 +23,36 @@ def loguptest():
 		elif nw_username == nw_password:
 			print("TEST FAIL: USERNAME ≠ PASSWORD")
 		else:
-   		 print("TEST OK")
+			print("TEST OK")
 def reset():
     reset_code = str(random.randint(1000, 9999))
     print("PASTE THE", reset_code, "IN THAT INPUT BRO")
 
-    start_time = time.time()   # thời điểm tạo code
-    limit = 30                 # 30 giây
+    start_time = time.time()
+    limit = 30
 
     code = input("enter reset code: ")
-
     current_time = time.time()
 
     if current_time - start_time > limit:
-        print("TEST FAIL: you make waste of time, now GET OUT!!!!!!")
+        print("TEST FAIL: you make waste of time")
         return
 
     if code == reset_code:
         new_pws = input("enter new password: ")
         confirm_pws = input("confirm your password: ")
 
-        if confirm_pws == new_pws:
+        if new_pws == confirm_pws:
             print("TEST OK")
         else:
             print("TEST FAIL: password doesn't match")
     else:
         print("TEST FAIL: code doesn't match")
 def info():
-	print("""I add Borlean on this code fr
-but I can be use without .txt
-Be for real. Learn → information of file(you will confued what i say)
-sorry but i is vietnamese so my gramar will be made you scold at me and yourself =) """)
+	print("""--BIG UPDATE YIPPY ^^--
+	ADD NOW THE BRAND NEW BOARD TO LOGIN
+	nooooo bolean will not appear in this program
+	Q&A will soon in comment (I don't know github has comment)""")
 def myfault():
 	print ("Nothing (SO MUCH CHATGPT!!) ")
 def some_fun():
@@ -69,7 +74,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
 	5:My fault of programing this
 	6:Some kind of fun (beta)
 	exit() quit...for now
-Update will be soon (1.3)""")
+Update will be soon (1.5)""")
 while True:
 	key = input(">>>")
 	if key == "1":
@@ -87,5 +92,7 @@ while True:
 	elif key == "exit()":
 		print("bye...for now")	
 		break
+	elif key == "exit":
+	    print("just for real, add some ')' pls")
 	else:
 		print("The code does nothing")

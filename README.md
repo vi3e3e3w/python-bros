@@ -26,6 +26,7 @@ python bros.py
 4. Information
 5. My fault
 6. Some fun
+7. clear
 
 Type:
 
@@ -37,10 +38,12 @@ to quit the program.
 
 vi3e3e3w
 
-## Who wirte this?
+## Who wirte this README?
 Ch- Ch- ChatGPT
 
-## VERSON
+## verson
 
 1.75
 (latest)
+(public release)
+Dev release is different than public

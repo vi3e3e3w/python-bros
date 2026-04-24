@@ -78,7 +78,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
 	6:Some kind of fun (beta)
 	clear:clear all this (remember this 'help')
 	exit() quit...for now
-Update will be soon (1.5)""")
+Update will be soon (1.75)""")
 while True:
 	key = input(">>>")
 	if key == "1":

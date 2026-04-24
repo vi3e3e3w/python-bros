@@ -37,7 +37,10 @@ to quit the program.
 
 vi3e3e3w
 
+## Who wirte this?
+Ch- Ch- ChatGPT
+
 ## VERSON
 
-1.5
+1.75
 (latest)

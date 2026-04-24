@@ -1,6 +1,9 @@
 #THKS TO BRILLIANT
-import random, time #PLAY RAMDOM WHO CARE =)))
+import random,os, time #PLAY RAMDOM WHO CARE =)))
 #-----Variable-----
+def clear()
+	os.system("cls" if os.name == "nt" else "clear")
+
 users = {
     "admin": "admin",
     "tests": "12345"
@@ -73,6 +76,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
 	4.information
 	5:My fault of programing this
 	6:Some kind of fun (beta)
+	clear:clear all this (remember this 'help')
 	exit() quit...for now
 Update will be soon (1.5)""")
 while True:
@@ -89,6 +93,8 @@ while True:
 		myfault()
 	elif key == "6":
 		some_fun()
+	elif key == "clear"
+		clear()
 	elif key == "exit()":
 		print("bye...for now")	
 		break

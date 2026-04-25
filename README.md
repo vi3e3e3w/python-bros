@@ -46,4 +46,3 @@ Ch- Ch- ChatGPT
 1.75
 (latest)
 (public release)
-Dev release is different than public

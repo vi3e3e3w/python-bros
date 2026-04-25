@@ -93,7 +93,7 @@ while True:
                 myfault()
         elif key == "6":
                 some_fun()
-        elf key == "clear":
+        elf key == "clear()":
                 clear()
         elif key == "exit()":
                 print("bye...for now")        

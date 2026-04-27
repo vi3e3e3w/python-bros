@@ -80,9 +80,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
     4.information
     5:My fault of programing this
     6:Some kind of fun (beta)
-    clear:clear all this (remember this 'help')
+    clear():clear all this (remember this 'help')
     exit() quit...for now
-Update will be soon (UPDATE DATE: 2026-27-4 UPDATE CODE: 1.9)""")
+Update will be soon (UPDATE DATE: 2026-27-4 UPDATE CODE: 2)""")
 while True:
     key = input(">>>")
     if key == "1":
@@ -97,12 +97,12 @@ while True:
         myfault()
     elif key == "6":
         some_fun()
-    elif key == "clear":
+    elif key == "clear()":
         clear()
     elif key == "exit()":
         print("bye...for now")
         break
-    elif key == "exit":
+    elif key == "exit" and "clear":
         print("just for real, add some ')' pls")
     else:
         print("The code does nothing")

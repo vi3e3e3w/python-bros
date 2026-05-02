@@ -6,30 +6,44 @@ import time #PLAY RAMDOM WHO CARE =)))
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
-users = {
-    "admin": "admin",
-    "tests": "12345"
-}
+def load_users():
+    users = {}
+    try:
+        with open("users.txt", "r") as f:
+            for line in f:
+                u, p = line.strip().split(":")
+                users[u] = p
+    except FileNotFoundError:
+        pass
+    return users
+
+def save_user(username, password):
+    with open("users.txt", "a") as f:
+        f.write(username + ":" + password + "\n")
 
 def logintest():
+    users = load_users()
+
     username = input("username: ")
     password = input("password: ")
 
     if username in users and users[username] == password:
-        print("TEST OK")
+        print("welcome back bro ")
     else:
-        print("GET OUT, USERNAME NOT IN LIST")
+        print("GET OUT ")
 
 def loguptest():
+    
     nw_username = input("username:")
     nw_password = input("password:")
-    limit = 5
-    if len(nw_password) < limit:
-        print("opps, not strong enough")
+
+    if len(nw_password) < 5:
+        print("opps, not strong enough ")
     elif nw_username == nw_password:
-        print("TEST FAIL: USERNAME ≠ PASSWORD")
+        print("bro... username = password,just be strong can be hacker ")
     else:
-        print("TEST OK")
+        save_user(nw_username, nw_password)
+        print("welcome bro ")
 
 def reset():
     reset_code = str(random.randint(1000, 9999))
@@ -82,7 +96,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
     6:Some kind of fun (beta)
     clear():clear all this (remember this 'help')
     exit() quit...for now
-Update will be soon (UPDATE DATE: 2026-27-4 UPDATE CODE: 2)""")
+Update will be soon (UPDATE DATE: 2026 - 5 - 2 UPDATE CODE: 3)""")
 while True:
     key = input(">>>")
     if key == "1":
@@ -102,7 +116,7 @@ while True:
     elif key == "exit()":
         print("bye...for now")
         break
-    elif key == "exit" and "clear":
+    elif key == "exit" or key == "clear":
         print("just for real, add some ')' pls")
     else:
         print("The code does nothing")

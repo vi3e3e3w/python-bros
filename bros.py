@@ -83,6 +83,8 @@ def some_fun():
         print("oh no! my phone is Qualcomm =(")
     elif answer == "main":
         print("ok, but tomorrow is not your main")
+    else
+	print("hey! this joke is fun bro")
 #         main
 
 print("""-------Python Bros---------
@@ -96,7 +98,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
     6:Some kind of fun (beta)
     clear():clear all this (remember this 'help')
     exit() quit...for now
-Update will be soon (UPDATE DATE: 2026 - 5 - 2 UPDATE CODE: 3)""")
+Update will be soon (UPDATE DATE: 2026 - 5 - 8 /  UPDATE CODE: 3.3)""")
 while True:
     key = input(">>>")
     if key == "1":

@@ -83,7 +83,7 @@ def some_fun():
         print("oh no! my phone is Qualcomm =(")
     elif answer == "main":
         print("ok, but tomorrow is not your main")
-    else
+    else:
 	print("hey! this joke is fun bro")
 #         main
 

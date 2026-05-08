@@ -43,6 +43,6 @@ Ch- Ch- ChatGPT
 
 ## verson
 
-3.3
+3.5
 (latest)
 (public release)

@@ -71,7 +71,7 @@ def reset():
         print("TEST FAIL: code doesn't match")
 
 def info():
-    print("""Fix some bugs""")
+    print("""Fix F*CKING INDENT ERROR! + If you ^C, something will happen to you""")
 
 def myfault():
     print("Nothing (SO MUCH CHATGPT!!) ")
@@ -98,27 +98,42 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
     6:Some kind of fun (beta)
     clear():clear all this (remember this 'help')
     exit() quit...for now
-Update will be soon (UPDATE DATE: 2026 - 5 - 8 /  UPDATE CODE: 3.3)""")
-while True:
-    key = input(">>>")
-    if key == "1":
-        logintest()
-    elif key == "2":
-        loguptest()
-    elif key == "3":
-        reset()
-    elif key == "4":
-        info()
-    elif key == "5":
-        myfault()
-    elif key == "6":
-        some_fun()
-    elif key == "clear()":
-        clear()
-    elif key == "exit()":
-        print("bye...for now")
-        break
-    elif key == "exit" or key == "clear":
-        print("just for real, add some ')' pls")
-    else:
-        print("The code does nothing")
+Update will be soon (UPDATE DATE: 2026 - 5 - 9 /  UPDATE CODE: 3.5)""")
+try:
+    while True:
+        key = input(">>>")
+
+        if key == "1":
+            logintest()
+
+        elif key == "2":
+            loguptest()
+
+        elif key == "3":
+            reset()
+
+        elif key == "4":
+            info()
+
+        elif key == "5":
+            myfault()
+
+        elif key == "6":
+            some_fun()
+
+        elif key == "clear()":
+            clear()
+
+        elif key == "exit()":
+            print("bye...for now")
+            break
+
+        elif key == "exit" or key == "clear":
+            print("just for real, add some ')' pls")
+
+        else:
+            print("The code does nothing")
+
+except KeyboardInterrupt:
+    print("\nDid you combo Ctrl + C??? Nevermind, bye!")
+

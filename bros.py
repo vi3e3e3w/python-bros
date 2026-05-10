@@ -71,7 +71,7 @@ def reset():
         print("TEST FAIL: code doesn't match")
 
 def info():
-    print("""Fix F*CKING INDENT ERROR! + If you ^C, something will happen to you""")
+    print("""Fix F*CKING INDENT ERROR!""")
 
 def myfault():
     print("Nothing (SO MUCH CHATGPT!!) ")
@@ -84,7 +84,7 @@ def some_fun():
     elif answer == "main":
         print("ok, but tomorrow is not your main")
     else:
-	print("hey! this joke is fun bro")
+        print("hey! this joke is fun bro")
 #         main
 
 print("""-------Python Bros---------
@@ -98,7 +98,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
     6:Some kind of fun (beta)
     clear():clear all this (remember this 'help')
     exit() quit...for now
-Update will be soon (UPDATE DATE: 2026 - 5 - 9 /  UPDATE CODE: 3.5)""")
+Update will be soon (UPDATE DATE: 2026 - 5 - 9 /  UPDATE CODE: 3.5.2)""")
 try:
     while True:
         key = input(">>>")

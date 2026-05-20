@@ -40,9 +40,3 @@ vi3e3e3w
 
 ## Who wirte this README?
 Ch- Ch- ChatGPT
-
-## verson
-
-3.5.2
-(latest)
-(public release)

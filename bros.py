@@ -1,11 +1,14 @@
 #THKS TO BRILLIANT
 import random
 import os
-import time #PLAY RAMDOM WHO CARE =)))
+import time
+import subprocess #PLAY RAMDOM WHO CARE =)))
 #-----Variable-----
 def clear():
-    os.system("cls" if os.name == "nt" else "clear")
-
+    if os.name == "nt":
+        subprocess.run("cls", shell=True)
+    else:
+        subprocess.run(["clear"])
 def load_users():
     users = {}
     try:
@@ -71,10 +74,14 @@ def reset():
         print("TEST FAIL: code doesn't match")
 
 def info():
-    print("""Fix F*CKING INDENT ERROR!""")
+    print("""VS Code and Pylance is disspont at this sytax
+                os.system
+        so i replace with subprocess
+        nah it not be a major change
+        just like...replace a chair with a modern one, you know?""")
 
 def myfault():
-    print("Nothing (SO MUCH CHATGPT!!) ")
+    print("Nothing in this code is SYTAX ERROR, but there are some logic error, and i will fix it in the future update, but for now, just enjoy this code bro")
 
 def some_fun():
     print("what kind of fun are you today?")
@@ -98,7 +105,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
     6:Some kind of fun (beta)
     clear():clear all this (remember this 'help')
     exit() quit...for now
-Update will be soon (UPDATE DATE: 2026 - 5 - 9 /  UPDATE CODE: 3.5.2)""")
+Update will be soon (UPDATE DATE: 2026 - 5 - 20 /  UPDATE CODE: 3.5.7)
+      I was return to this code after 11 days, and i will update this code in the future, but for now, just enjoy this code bro""")
 try:
     while True:
         key = input(">>>")

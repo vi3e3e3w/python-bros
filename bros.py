@@ -4,11 +4,42 @@ import os
 import time
 import subprocess #PLAY RAMDOM WHO CARE =)))
 #-----Variable-----
+Coin = 0
+def Subscription_Package():
+    global Coin
+    try:
+        package = int(input("Enter the subscription package (1, 2, or 3): "))
+        if package == 1:
+            cost = 10
+        elif package == 2:
+            cost = 20
+        elif package == 3:
+            cost = 30
+        else:
+            print("Invalid package. Please enter 1, 2, or 3.")
+            return Subscription_Package()
+
+        # Check and subtract coins
+        if Coin >= cost:
+            Coin -= cost
+            print(f"Subscription purchased for {cost} coins. Remaining coins: {Coin}")
+            return cost
+        else:
+            print(f"Not enough coins. You have {Coin}, but need {cost}.")
+            return None
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        return Subscription_Package()
+    except KeyboardInterrupt:
+        print("\nSubscription process interrupted. Returning to main menu.")
+        return
+
 def clear():
     if os.name == "nt":
         subprocess.run("cls", shell=True)
     else:
         subprocess.run(["clear"])
+
 def load_users():
     users = {}
     try:
@@ -105,8 +136,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$
     6:Some kind of fun (beta)
     clear():clear all this (remember this 'help')
     exit() quit...for now
-Update will be soon (UPDATE DATE: 2026 - 5 - 20 /  UPDATE CODE: 3.5.7)
-      I was return to this code after 11 days, and i will update this code in the future, but for now, just enjoy this code bro""")
+Update will be soon (UPDATE DATE: 2026 - 5 - 22/  UPDATE CODE: 3.8.0)""")
 try:
     while True:
         key = input(">>>")
@@ -128,6 +158,9 @@ try:
 
         elif key == "6":
             some_fun()
+
+        elif key == "7":
+            Subscription_Package()
 
         elif key == "clear()":
             clear()

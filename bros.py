@@ -5,10 +5,16 @@ import time
 import subprocess #PLAY RAMDOM WHO CARE =)))
 #-----Variable-----
 Coin = 0
+user_subscription = "Free"
 def Subscription_Package():
     global Coin
     try:
-        package = int(input("Enter the subscription package (1, 2, or 3): "))
+        print("you have", Coin, "coins and you are",user_subscription,"stage")
+        package = int(input("""Enter the subscription package (1, 2, or 3): 
+                            1. Basic     - 10 coins   
+                            2. Standard  - 20 coins
+                            3. Premium   - 30 coins
+                            Your choice: """))
         if package == 1:
             cost = 10
         elif package == 2:
@@ -22,6 +28,7 @@ def Subscription_Package():
         # Check and subtract coins
         if Coin >= cost:
             Coin -= cost
+            user_subscription = ["Free", "Basic", "Standard", "Premium"][package]
             print(f"Subscription purchased for {cost} coins. Remaining coins: {Coin}")
             return cost
         else:
@@ -105,11 +112,10 @@ def reset():
         print("TEST FAIL: code doesn't match")
 
 def info():
-    print("""VS Code and Pylance is disspont at this sytax
-                os.system
-        so i replace with subprocess
-        nah it not be a major change
-        just like...replace a chair with a modern one, you know?""")
+    print("""What's New in Python Bros:
+    - Improved user authentication system
+    - Enhanced subscription management(collect conin by useing all temple. you can be free cause all are same features, like a temple)
+    - Bug fixes and performance improvements""")
 
 def myfault():
     print("Nothing in this code is SYTAX ERROR, but there are some logic error, and i will fix it in the future update, but for now, just enjoy this code bro")
@@ -124,16 +130,18 @@ def some_fun():
     else:
         print("hey! this joke is fun bro")
 #         main
-
+print("you have", Coin, "coins and you are",user_subscription,"stage")
 print("""-------Python Bros---------
-$$$$$$$$$$$$$$$$$$$$$$$$$$$
+WERE YOU CAN TAKE A PART OF MY CODE, NON-COPYRIGHT (SOVIET aura)
+      $$$$$$$$$$$$$$$$$$$$$$$$$$$
        choose mode
-    1.Login
-    2.Log up
-    3.Reset passworld
-    4.information
+    1.Login (Temple)
+    2.Log up (Temple)
+    3.Reset passworld (Temple)
+    4.what's new?
     5:My fault of programing this
     6:Some kind of fun (beta)
+    7:Subscription Package (beta and temple)
     clear():clear all this (remember this 'help')
     exit() quit...for now
 Update will be soon (UPDATE DATE: 2026 - 5 - 22/  UPDATE CODE: 3.8.0)""")

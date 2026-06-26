@@ -40,3 +40,6 @@ vi3e3e3w
 
 ## Who wirte this README?
 Ch- Ch- ChatGPT
+
+
+So you can change this code free btw
